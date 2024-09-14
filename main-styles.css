@@ -134,11 +134,13 @@ width:100%;
     border-radius: 15px;
     padding: 15px;
     margin: 20px auto;
-    font-family: Arial, sans-serif;
+}
+
+.testiomonial-card p {
+	  
     font-size: 25px;
     color: #fff;
 }
-
 
 
 .testimonial-card:after {
