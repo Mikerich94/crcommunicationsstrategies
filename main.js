@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(ScrollTrigger);
 
 const carouselInner = document.querySelector('.carousel-inner');
 const carouselItems = document.querySelectorAll('.carousel-item');
@@ -68,7 +69,7 @@ timeline1.to('.solution-card', {
     },
    
   })
-	gsap.to('.about-me-image', {autoAlpha:1, duration:7});
+	timelin2.to('.about-me-image', {autoAlpha:1, duration:7});
 	
 
 let b1 = "linear-gradient(0deg, rgba(34, 87, 103, 1) 50%, rgba(62, 142, 150, 1) 94%, rgba(62, 142, 150, 1) 70%);";
