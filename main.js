@@ -53,25 +53,17 @@ window.addEventListener('resize', () => {
   })
 	gsap.to('.about-me-image', {autoAlpha:1, duration:7});
 	
-	var timeline2 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".homepage-hero-row",
-    pin: true, // pin the trigger element while active
-    start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "+=50", // end after scrolling 500px beyond the start
-
-    markers: false
-  },
- 
-});
-
-// Apply stagger within the .to() method
-timeline2.to('.solution-card', {
-  autoAlpha: 1, // animate opacity
-  duration: 1.5, // duration of each animation
-  stagger: 0.1 // stagger time between animations for each card
-});
-
+	gsap.to(".solution-card", {
+    scrollTrigger: {
+      trigger: ".homepage-hero-row",
+      start: "top center",
+      end: "+=500", // Adjusted for testing
+      scrub: true
+    },
+    autoAlpha: 1,
+    duration: 1.5,
+    stagger: 0.1
+  });
 
 let b1 = "linear-gradient(0deg, rgba(34, 87, 103, 1) 50%, rgba(62, 142, 150, 1) 94%, rgba(62, 142, 150, 1) 70%);";
 let b2 = "linear-gradient(180deg, rgba(34,87,103,1) 5%, rgba(62,142,150,1) 50%, rgba(62,142,150,1) 75%)";
