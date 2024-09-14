@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       trigger: ".two-col-section",
       start: "top center",
       end: "bottom top",
-      markers: true,
+      markers: false,
       onEnter: () => console.log("Entered the trigger zone"),
       onLeave: () => console.log("Left the trigger zone")
     },
