@@ -47,7 +47,7 @@ var timeline1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".homepage-hero-row",
     start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "+=200", // end after scrolling x pixels 
+    end: "+=100", // end after scrolling x pixels 
     markers: true
   },
   
@@ -65,11 +65,11 @@ timeline1.to('.solution-card', {
       trigger: ".about-me.wrapper",
     
       start: "top center", // when the top of the trigger hits the top of the viewport
-      end: "+=50", // end after scrolling 500px beyond the start
+      end: "+=100", // end after scrolling 500px beyond the start
     },
    
   })
-	timelin2.to('.about-me-image', {autoAlpha:1, duration:7});
+	timeline2.to('.about-me-image', {autoAlpha:1, duration:7});
 	
 
 let b1 = "linear-gradient(0deg, rgba(34, 87, 103, 1) 50%, rgba(62, 142, 150, 1) 94%, rgba(62, 142, 150, 1) 70%);";
