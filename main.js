@@ -1,6 +1,24 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger);
 
+  var timeline1 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".two-col-section",
+      start: "top center", // when the top of the trigger hits the top of the viewport
+      end: "+=100", // end after scrolling x pixels 
+      markers: true
+    },
+    
+  });
+  
+  // Apply stagger within the .to() method
+  timeline1.to('.solution-card', {
+    autoAlpha: 1, // animate opacity
+    duration: 1.5, // duration of each animation
+    stagger: 0.1 // stagger time between animations for each card
+  });
+  
+
 const carouselInner = document.querySelector('.carousel-inner');
 const carouselItems = document.querySelectorAll('.carousel-item');
 const itemsVisible = 4; // Number of items to show at once
@@ -43,22 +61,6 @@ window.addEventListener('resize', () => {
 });
 
 
-var timeline1 = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".two-col-section",
-    start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "+=100", // end after scrolling x pixels 
-    markers: true
-  },
-  
-});
-
-// Apply stagger within the .to() method
-timeline1.to('.solution-card', {
-  autoAlpha: 1, // animate opacity
-  duration: 1.5, // duration of each animation
-  stagger: 0.1 // stagger time between animations for each card
-});
 
   var timeline2 = gsap.timeline({
     scrollTrigger: {
