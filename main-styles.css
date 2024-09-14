@@ -265,6 +265,8 @@ width:100%;
 
 .footer-text {
 	text-align:center;
+	margin:0;
+	color:#fff;
 	padding-top:50px;
 }
 
