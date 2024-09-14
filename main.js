@@ -47,10 +47,9 @@ var timeline1 = gsap.timeline({
     trigger: ".homepage-hero",
     start: "top center", // when the top of the trigger hits the top of the viewport
     end: "+=50", // end after scrolling 500px beyond the start
-
-    markers: false
+    markers: true
   },
- 
+  
 });
 
 // Apply stagger within the .to() method
