@@ -4,9 +4,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
   var timeline1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".two-col-section",
-      start: "top center", // when the top of the trigger hits the top of the viewport
-      end: "+=100", // end after scrolling x pixels 
-      markers: true
+      start: "top center",
+      end: "bottom top",
+      markers: true,
+      onEnter: () => console.log("Entered the trigger zone"),
+      onLeave: () => console.log("Left the trigger zone")
     },
     
   });
