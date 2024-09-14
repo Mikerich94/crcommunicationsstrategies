@@ -20,6 +20,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     stagger: 0.1 // stagger time between animations for each card
   });
   
+  var timeline2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".about-me.wrapper",
+    
+      start: "top center", // when the top of the trigger hits the top of the viewport
+      end: "+=100", // end after scrolling 500px beyond the start
+    },
+   
+  })
+	timeline2.to('.about-me-image', {autoAlpha:1, duration:4});
 
 const carouselInner = document.querySelector('.carousel-inner');
 const carouselItems = document.querySelectorAll('.carousel-item');
@@ -64,16 +74,7 @@ window.addEventListener('resize', () => {
 
 
 
-  var timeline2 = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".about-me.wrapper",
-    
-      start: "top center", // when the top of the trigger hits the top of the viewport
-      end: "+=100", // end after scrolling 500px beyond the start
-    },
-   
-  })
-	timeline2.to('.about-me-image', {autoAlpha:1, duration:7});
+ 
 	
 
 let b1 = "linear-gradient(0deg, rgba(34, 87, 103, 1) 50%, rgba(62, 142, 150, 1) 94%, rgba(62, 142, 150, 1) 70%);";
