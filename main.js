@@ -44,9 +44,9 @@ window.addEventListener('resize', () => {
 
 var timeline1 = gsap.timeline({
   scrollTrigger: {
-    trigger: ".homepage-hero",
+    trigger: ".homepage-hero-row",
     start: "top center", // when the top of the trigger hits the top of the viewport
-    end: "+=50", // end after scrolling 500px beyond the start
+    end: "+=200", // end after scrolling x pixels 
     markers: true
   },
   
