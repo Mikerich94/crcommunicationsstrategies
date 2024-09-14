@@ -95,6 +95,18 @@ gsap.fromTo(
   }
 );
 
+gsap.fromTo(
+  ".contact-container",
+  { backgroundImage: b1 },
+  { 
+    backgroundImage: b2, 
+    duration: 12,  // Duration for a smooth transition
+    ease: "power2.inOut",  // Smoother easing function
+    repeat: -1, 
+    yoyo: true 
+  }
+);
+
 
 
 
