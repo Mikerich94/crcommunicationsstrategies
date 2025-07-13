@@ -110,6 +110,22 @@ gsap.fromTo(
 
 
 
+ document.addEventListener("DOMContentLoaded", function () {
+    const subtext = document.querySelector('.subtext');
+    const fullText = subtext.textContent;
+    subtext.textContent = ''; // Clear existing text
 
+    let i = 0;
+
+    function typeLetter() {
+      if (i < fullText.length) {
+        subtext.textContent += fullText.charAt(i);
+        i++;
+        setTimeout(typeLetter, 60); // typing speed (ms per letter)
+      }
+    }
+
+    typeLetter();
+  });
 	
 });
