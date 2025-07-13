@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   var timeline1 = gsap.timeline({
     scrollTrigger: {
       trigger: ".two-col-section",
-      start: "top center",
+      start: "top 70%",
       end: "bottom top",
       markers: false,
       onEnter: () => console.log("Entered the trigger zone"),
