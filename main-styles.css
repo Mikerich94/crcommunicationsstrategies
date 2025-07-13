@@ -3,7 +3,6 @@
 	font-family:Rajdhani;
 	box-sizing:border-box;
   user-select: none;
-  pointer-events: none;
 }
 
 body {
