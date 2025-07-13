@@ -43,6 +43,19 @@ padding-bottom:50px;
 padding:50px 0px 100px 0px;
   
 }
+.subtext,
+.homepage-hero-text h1,
+.homepage-hero-text h3 {
+  user-select: none;
+  pointer-events: none;
+}
+
+.homepage-hero-text {
+	 flex: 1;
+  max-width: 755px;
+  min-width: 300px;
+  word-break: break-word;
+}
 
 .subtext::after {
   content: '|';
