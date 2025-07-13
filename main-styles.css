@@ -2,6 +2,8 @@
 * {
 	font-family:Rajdhani;
 	box-sizing:border-box;
+  user-select: none;
+  pointer-events: none;
 }
 
 body {
@@ -43,12 +45,7 @@ padding-bottom:50px;
 padding:50px 0px 100px 0px;
   
 }
-.subtext,
-.homepage-hero-text h1,
-.homepage-hero-text h3 {
-  user-select: none;
-  pointer-events: none;
-}
+
 
 .homepage-hero-text {
 	 flex: 1;
