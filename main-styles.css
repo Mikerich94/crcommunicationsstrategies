@@ -212,8 +212,8 @@ width:100%;
 .solution-card {
 	opacity:0;
     background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border: 1px solid #000;
+    border-radius: 15px;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     width: calc(33.333% - 20px); /* 3 cards per row with 20px gap */
@@ -222,14 +222,8 @@ width:100%;
 	transition: 0.3s;
 }
 
-.solution-card:hover {
-	background-color:#225767;
-	color:#fff;
-}
 
-.solution-card:hover p {
-	color:#fff;
-}
+
 
 .solution-card img {
     max-width: 100%;
